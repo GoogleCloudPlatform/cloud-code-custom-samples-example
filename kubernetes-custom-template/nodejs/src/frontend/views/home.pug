@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Custom Template
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='icon', href='assets/kubernetes-engine-icon.png', type='image/png')
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+        link(rel='stylesheet', href='css/style.css')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+    body
+        .header
+            .container
+                .image-container: img(src='assets/KE-hello-world.svg' alt='A group celebrating')
+                h1 Congratulations! You've deployed a Custom Template with Cloud Code.
+                .message This Custom Template provides a framework for building a Node.js application with a frontend, backend, and #[a(href='https://www.mongodb.com/') MongoDB] database. You can customize the code in this template to build your own dynamic application.
+        .container
+            h3 What's next?
+            ul
+                li.next Build your own #[a(href='https://cloud.google.com/code/docs/vscode/set-up-template-repo') Custom Template repository] on Github
+                li.next View the #[a(href='https://github.com/GoogleCloudPlatform/cloud-code-custom-templates-example') Custom Templates Example Repo] on Github
+                li.next Explore a #[a(href='https://github.com/GoogleCloudPlatform/cloud-code-samples/tree/master/nodejs/nodejs-guestbook') completed "Guestbook" app] built using this Custom Template
+        .container
+            h3 Try out the template's service by posting a message below!
+        .container.posts.mt-0
+            include input.pug
+            include output.pug
