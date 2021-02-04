@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-template-frontend
+  labels:
+    app: nodejs-template
+    tier: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodejs-template
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: nodejs-template
+        tier: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: nodejs-template-frontend
+        ports:
+        - name: http-server
+          containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: TEMPLATE_API_ADDR
+          value: nodejs-template-backend:8080

@@ -1,0 +1,7 @@
+form.form-inline(action="/post", method="POST")
+    label.sr-only(for="data") Input
+    .input-group.mb-2.mr-sm-2
+        .input-group-prepend
+            .input-group-text Input
+        input#data.form-control(type="text", name="data", placeholder="Hello World!", required)
+    button.btn.btn-primary.mb-2(type="submit") Post
