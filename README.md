@@ -8,7 +8,7 @@ This repository is an example [Custom Template Repository](https://cloud.google.
 ### .cctemplate
 The `.cctemplate` is a [Template Descriptor](https://cloud.google.com/code/docs/intellij/set-up-template-repo#template_descriptor_schema) file that describes the contents of your repository so that Cloud Code knows where to look for your templates. It should look something like the following:
 
-```json
+```
 {
     "metadata": {
         "version": "1"
@@ -50,9 +50,9 @@ You can create your own Custom Template repo using this repository as a base.
 
 2. Create a new directory containing your own template (or make changes to any of the sample templates)
 
-3. Import your local, updated repository into Cloud Code
+3. Make any necessary updates to the templates in the `.cctemplate` file 
 
-> Be sure to make any necessary updates to the `.cctemplate` file before importing your repository.
+4. Import your local, updated repository into Cloud Code  
 
 
 --- 
