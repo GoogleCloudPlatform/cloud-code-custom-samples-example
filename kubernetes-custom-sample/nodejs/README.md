@@ -1,14 +1,14 @@
-# Kubernetes Custom Template
+# Kubernetes Custom Sample
 
-This Custom Template creates a basic Kubernetes web application with a frontend and backend service. The template files include logic to make HTTP requests, read from and write to a database, and display content. The template can be customized to build a dynamic application.
+This Custom Sample creates a basic Kubernetes web application with a frontend and backend service. The sample files include logic to make HTTP requests, read from and write to a database, and display content. The sample can be customized to build a dynamic application.
 
-For instructions on setting up your own Custom Template repository, read the [Custom Templates documentation](https://cloud.google.com/code/docs/vscode/set-up-template-repo?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
+For instructions on setting up your own Custom Sample repository, read the [Custom Samples documentation](https://cloud.google.com/code/docs/vscode/set-up-template-repo?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
 
 
 ---
 
 ## Table of contents
-- [Template contents](#template-contents)
+- [Sample contents](#sample-contents)
 - [Examples](#examples)
 - [Deploying with VS Code](#deploying-with-vs-code)
 - [Deploying with IntelliJ](#deploying-with-intellij)
@@ -16,9 +16,9 @@ For instructions on setting up your own Custom Template repository, read the [Cu
 
 ---
 
-## Template contents
+## Sample contents
 
-The Kubernetes Custom Template contains a **skaffold.yaml** and Kubernetes manifest yamls for each service. When you deploy the app with Cloud Code, it uses [skaffold](https://skaffold.dev/docs/) to build an image and deploy the project's Kubernetes manifests.
+The Kubernetes Custom Sample contains a **skaffold.yaml** and Kubernetes manifest yamls for each service. When you deploy the app with Cloud Code, it uses [skaffold](https://skaffold.dev/docs/) to build an image and deploy the project's Kubernetes manifests.
 
 - **skaffold.yaml** configures how to build the app
 - **/kubernetes-manifests** contains the Kubernetes yaml manifests
@@ -49,17 +49,17 @@ The backend service manages requests to a MongoDB database.
 
 ## Examples
 
-For an example of an application built using this template, see the [Cloud Code "Guestbook" sample](https://github.com/GoogleCloudPlatform/cloud-code-samples/tree/master/nodejs/nodejs-guestbook).
+For an example of an application built using this sample, see the [Cloud Code "Guestbook" sample](https://github.com/GoogleCloudPlatform/cloud-code-samples/tree/master/nodejs/nodejs-guestbook).
 
 ![Guestbook display](./img/my-guestbook.png)
 
-Are you using the Kubernetes Custom Template to build an app? Let us know by joining the **#cloud-code** channel in the [Google Cloud Platform Slack community](https://join.slack.com/t/googlecloud-community/shared_invite/zt-erdf4ity-8ZMUQ18DYV~5hkbZ~gCswg)!
+Are you using the Kubernetes Custom Sample to build an app? Let us know by joining the **#cloud-code** channel in the [Google Cloud Platform Slack community](https://join.slack.com/t/googlecloud-community/shared_invite/zt-erdf4ity-8ZMUQ18DYV~5hkbZ~gCswg)!
 
 ---
 
 ## Deploying with VS Code
 
-For details on how to deploy this template with Cloud Code, read the Cloud Code for [VS Code documentation](https://cloud.google.com/code/docs/vscode/quickstart-local-dev?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
+For details on how to deploy this sample with Cloud Code, read the Cloud Code for [VS Code documentation](https://cloud.google.com/code/docs/vscode/quickstart-local-dev?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
 
 ### Run the app locally with minikube
 
@@ -78,7 +78,7 @@ For details on how to deploy this template with Cloud Code, read the Cloud Code 
 
 ## Deploying with IntelliJ
 
-For details on how to deploy this template with Cloud Code, read the Cloud Code for [IntelliJ documentation](https://cloud.google.com/code/docs/intellij/quickstart-k8s?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
+For details on how to deploy this sample with Cloud Code, read the Cloud Code for [IntelliJ documentation](https://cloud.google.com/code/docs/intellij/quickstart-k8s?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
 
 ### Run the app locally with minikube
 

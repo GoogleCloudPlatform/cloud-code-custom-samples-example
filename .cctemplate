@@ -6,12 +6,12 @@
         {
             "path": "hello-world",
             "name": "Golang Hello World App",
-            "description": "A simple golang sample template"
+            "description": "A simple golang sample"
         },
         {
-            "path": "kubernetes-custom-template/nodejs",
-            "name": "Kubernetes Custom Template - Node.js",
-            "description": "A two-service sample template run on Kubernetes"
+            "path": "kubernetes-custom-sample/nodejs",
+            "name": "Kubernetes Custom Sample - Node.js",
+            "description": "A two-service sample run on Kubernetes"
         }
     ]
 }
