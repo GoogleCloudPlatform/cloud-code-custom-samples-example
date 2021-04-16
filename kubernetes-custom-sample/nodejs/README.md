@@ -1,6 +1,6 @@
 # Kubernetes Custom Sample
 
-This Custom Sample creates a basic Kubernetes web application with a frontend and backend service. The sample files include logic to make HTTP requests, read from and write to a database, and display content. The sample can be customized to build a dynamic application.
+This custom sample creates a basic Kubernetes web application with a frontend and backend service. The sample files include logic to make HTTP requests, read from and write to a database, and display content. The sample can be customized to build a dynamic application.
 
 For instructions on setting up your own Custom Sample repository, read the [Custom Samples documentation](https://cloud.google.com/code/docs/vscode/set-up-template-repo?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
 
@@ -18,7 +18,7 @@ For instructions on setting up your own Custom Sample repository, read the [Cust
 
 ## Sample contents
 
-The Kubernetes Custom Sample contains a **skaffold.yaml** and Kubernetes manifest yamls for each service. When you deploy the app with Cloud Code, it uses [skaffold](https://skaffold.dev/docs/) to build an image and deploy the project's Kubernetes manifests.
+The Kubernetes custom sample contains a **skaffold.yaml** and Kubernetes manifest yamls for each service. When you deploy the app with Cloud Code, it uses [skaffold](https://skaffold.dev/docs/) to build an image and deploy the project's Kubernetes manifests.
 
 - **skaffold.yaml** configures how to build the app
 - **/kubernetes-manifests** contains the Kubernetes yaml manifests
@@ -53,7 +53,7 @@ For an example of an application built using this sample, see the [Cloud Code "G
 
 ![Guestbook display](./img/my-guestbook.png)
 
-Are you using the Kubernetes Custom Sample to build an app? Let us know by joining the **#cloud-code** channel in the [Google Cloud Platform Slack community](https://join.slack.com/t/googlecloud-community/shared_invite/zt-erdf4ity-8ZMUQ18DYV~5hkbZ~gCswg)!
+Are you using the Kubernetes custom sample to build an app? Let us know by joining the **#cloud-code** channel in the [Google Cloud Platform Slack community](https://join.slack.com/t/googlecloud-community/shared_invite/zt-erdf4ity-8ZMUQ18DYV~5hkbZ~gCswg)!
 
 ---
 
