@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-kubernetes-template",
+  "name": "nodejs-kubernetes-sample",
   "version": "1.0.0",
-  "description": "Kubernetes Custom Template",
+  "description": "Kubernetes Custom Sample",
   "dependencies": {
     "eslint": "7.24.0"
   },

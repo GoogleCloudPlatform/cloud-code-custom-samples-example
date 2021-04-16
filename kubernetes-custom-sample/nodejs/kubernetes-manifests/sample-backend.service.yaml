@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodejs-template-backend
+  name: nodejs-sample-backend
   labels:
-    app: nodejs-template
+    app: nodejs-sample
     tier: backend
 spec:
   type: ClusterIP
   selector:
-    app: nodejs-template
+    app: nodejs-sample
     tier: backend
   ports:
   - port: 8080

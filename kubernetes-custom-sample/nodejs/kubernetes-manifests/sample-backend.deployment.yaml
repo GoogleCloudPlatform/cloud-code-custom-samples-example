@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-template-backend
+  name: nodejs-sample-backend
   labels:
-    app: nodejs-template
+    app: nodejs-sample
     tier: backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodejs-template
+      app: nodejs-sample
       tier: backend
   template:
     metadata:
       labels:
-        app: nodejs-template
+        app: nodejs-sample
         tier: backend
     spec:
      initContainers:
@@ -22,15 +22,15 @@ spec:
         image: mongo:4
         command: ['/bin/sh', '-c']
         args:
-          - echo "Waiting for mongodb to start...";until (mongo --host nodejs-template-mongodb:27017 >/dev/null 2>&1) do echo "Waiting for connection for 2 sec."; sleep 2; done
+          - echo "Waiting for mongodb to start...";until (mongo --host nodejs-sample-mongodb:27017 >/dev/null 2>&1) do echo "Waiting for connection for 2 sec."; sleep 2; done
      containers:
       - name: backend
-        image: nodejs-template-backend
+        image: nodejs-sample-backend
         ports:
         - name: http-server
           containerPort: 8080
         env:
         - name: PORT
           value: "8080"
-        - name: TEMPLATE_DB_ADDR
-          value: "nodejs-template-mongodb:27017"
+        - name: SAMPLE_DB_ADDRESS
+          value: "nodejs-sample-mongodb:27017"
