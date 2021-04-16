@@ -4,9 +4,19 @@
     },
     "templates": [
         {
-            "path "bank-of-anthos",
+            "path": "bank-of-anthos",
             "name": "Bank of Anthos",
             "description": "An HTTP-based web app that simulates a bank's payment processing network."
+        },
+        {
+            "path": "bank-of-anthos/src/frontend",
+            "name": "Bank of Anthos Frontend",
+            "description": "A sample containing the frontend service of Bank of Anthos."
+        },
+        {
+            "path": "file-sync-example",
+            "name": "File Sync Example",
+            "description": "A Node.js and Python app demonstrating Cloud Code's file sync capability."
         },
         {
             "path": "hello-world",
@@ -16,7 +26,7 @@
         {
             "path": "kubernetes-custom-sample/nodejs",
             "name": "Kubernetes Custom Sample - Node.js",
-            "description": "A two-service sample run on Kubernetes"
+            "description": "A two-service sample with a MongoDB database run on Kubernetes"
         },
 
     ]
