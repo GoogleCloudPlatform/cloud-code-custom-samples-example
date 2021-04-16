@@ -38,7 +38,7 @@ A Node.js sample with a frontend and backend service. This sample uses MongoDB a
 
 ## Usage
 
-To see an example of how the Custom Sample feature of Cloud Code works, you can configure your IDE to recognize this repository and create applications based on the sample within. Follow the steps below to see Custom Sample in action!
+To see an example of how the Custom Sample feature of Cloud Code works, you can configure your IDE to recognize this repository and create applications based on the sample within. Follow the steps below to see this feature in action!
 
 1. Install Cloud Code for [IntelliJ](https://cloud.google.com/code/docs/intellij/install?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) or [VS Code](https://cloud.google.com/code/docs/vscode/install?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-)
 
