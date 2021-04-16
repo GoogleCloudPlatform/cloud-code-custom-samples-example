@@ -30,9 +30,21 @@ There is an example `.cctemplate` file in this repository that you can review, a
 
 A simple sample written in Go. You can see an entry for this sample in the `.cctemplate` file.
 
+### file-sync-example
+
+An example application demonstrating skaffold's [file sync](https://skaffold.dev/docs/pipeline-stages/filesync/), which is used by Cloud Code under the hood. Changes to a file are copied to the container without needing to rebuild or restart the corresponding pod. The original version of this sample is located in the [skaffold examples repo](https://github.com/GoogleContainerTools/skaffold/examples/hot-reload). 
+
 ### kubernetes-custom-sample/nodejs
 
 A Node.js sample with a frontend and backend service. This sample uses MongoDB as a database and runs on Kubernetes. You can see an entry for this sample in the `.cctemplate` file.
+
+### bank-of-anthos
+
+A copy of the [Bank of Anthos](https://github.com/GoogleCloudPlatform/bank-of-anthos) application, an HTTP-based web app that simulates a bank's payment processing network. This app demonstrates using Google Cloud Platform products to modernize enterprise applications. It's configured to run with any Kubernetes cluster in Cloud Code.
+
+### bank-of-anthos/src/frontend
+
+The frontend service for Bank of Anthos is included in the `.cctemplate` file as a separate sample. This is an example of how to use a subfolder in a repo as a separate Custom Sample.
 
 ---
 
