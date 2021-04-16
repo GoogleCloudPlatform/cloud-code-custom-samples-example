@@ -4,6 +4,11 @@
     },
     "templates": [
         {
+            "path "bank-of-anthos",
+            "name": "Bank of Anthos",
+            "description": "An HTTP-based web app that simulates a bank's payment processing network."
+        },
+        {
             "path": "hello-world",
             "name": "Golang Hello World App",
             "description": "A simple golang sample"
@@ -12,6 +17,7 @@
             "path": "kubernetes-custom-sample/nodejs",
             "name": "Kubernetes Custom Sample - Node.js",
             "description": "A two-service sample run on Kubernetes"
-        }
+        },
+
     ]
 }

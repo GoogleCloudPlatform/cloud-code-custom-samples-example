@@ -1,5 +1,6 @@
-![Continuous Integration](https://github.com/GoogleCloudPlatform/bank-of-anthos/workflows/Continuous%20Integration%20-%20Master/Release/badge.svg)
+**NOTE: This is a copy of [Bank of Anthos](https://github.com/GoogleCloudPlatform/bank-of-anthos).** This copy is intended to demonstrate the inclusion of full-scale applications within a Custom Samples repo. To interact with the official version of this project, please visit the original repo for Bank of Anthos: [github.com/GoogleCloudPlatform/bank-of-anthos](https://github.com/GoogleCloudPlatform/bank-of-anthos)
 
+---
 # Bank of Anthos
 
 **Bank of Anthos** is a sample HTTP-based web app that simulates a bank's payment processing network, allowing users to create artificial bank accounts and complete transactions.
