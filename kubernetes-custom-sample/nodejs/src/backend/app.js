@@ -13,8 +13,8 @@ if(!process.env.PORT) {
   throw new Error(errMsg)
 }
 
-if(!process.env.TEMPLATE_DB_ADDR) {
-  const errMsg = "TEMPLATE_DB_ADDR environment variable is not defined"
+if(!process.env.SAMPLE_DB_ADDR) {
+  const errMsg = "SAMPLE_DB_ADDR environment variable is not defined"
   console.error(errMsg)
   throw new Error(errMsg)
 }

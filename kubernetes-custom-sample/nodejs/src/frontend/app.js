@@ -4,9 +4,9 @@ const app = express();
 const bodyParser = require('body-parser')
 const axios = require('axios')
 
-const TEMPLATE_API_ADDR = process.env.TEMPLATE_API_ADDR
+const SAMPLE_API_ADDR = process.env.SAMPLE_API_ADDR
 
-const BACKEND_URI = `http://${TEMPLATE_API_ADDR}/db`
+const BACKEND_URI = `http://${SAMPLE_API_ADDR}/db`
 
 app.set("view engine", "pug")
 app.set("views", path.join(__dirname, "views"))
@@ -24,8 +24,8 @@ if(!process.env.PORT) {
   throw new Error(errMsg)
 }
 
-if(!process.env.TEMPLATE_API_ADDR) {
-  const errMsg = "TEMPLATE_API_ADDR environment variable is not defined"
+if(!process.env.SAMPLE_API_ADDR) {
+  const errMsg = "SAMPLE_API_ADDR environment variable is not defined"
   console.error(errMsg)
   throw new Error(errMsg)
 }

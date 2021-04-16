@@ -6,20 +6,20 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: nodejs-template-mongodb
+  name: nodejs-sample-mongodb
   labels:
-    app: nodejs-template
+    app: nodejs-sample
     tier: db
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodejs-template
+      app: nodejs-sample
       tier: db
   template:
     metadata:
       labels:
-        app: nodejs-template
+        app: nodejs-sample
         tier: db
     spec:
       containers:

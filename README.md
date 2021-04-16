@@ -1,12 +1,12 @@
-# Example Custom Template Repository
+# Example Custom Sample Repository
 
-This repository is an example [Custom Template Repository](https://cloud.google.com/code/docs/vscode/set-up-template-repo?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) that can be used with the Cloud Code plugins for [VSCode](https://cloud.google.com/code/docs/vscode/quickstart?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) and [IntelliJ](https://cloud.google.com/code/docs/intellij/quickstart?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
+This repository is an example [Custom Sample Repository](https://cloud.google.com/code/docs/vscode/set-up-template-repo?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) that can be used with the Cloud Code plugins for [VSCode](https://cloud.google.com/code/docs/vscode/quickstart?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) and [IntelliJ](https://cloud.google.com/code/docs/intellij/quickstart?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
 
 --- 
 ## Contents
 
 ### .cctemplate
-The `.cctemplate` is a [Template Descriptor](https://cloud.google.com/code/docs/intellij/set-up-template-repo#template_descriptor_schema) file that describes the contents of your repository so that Cloud Code knows where to look for your templates. It should look something like the following:
+The `.cctemplate` is a [Sample Descriptor](https://cloud.google.com/code/docs/intellij/set-up-template-repo#template_descriptor_schema) file that describes the contents of your repository so that Cloud Code knows where to look for your samples. It should look something like the following:
 
 ```
 {
@@ -15,42 +15,42 @@ The `.cctemplate` is a [Template Descriptor](https://cloud.google.com/code/docs/
     },
     "templates": [
         {
-            "path": "path/to/my/template",
-            "name": "My Template",
-            "description": "This template helps you create something amazing!"
+            "path": "path/to/my/sample",
+            "name": "My Sample",
+            "description": "This sample helps you create something amazing!"
         },
         ...
     ]
 }
 ```
 
-There is an example `.cctemplate` file in this repository that you can review, and you can learn more about the Template Descriptor schema [here](https://cloud.google.com/code/docs/vscode/set-up-template-repo#template_descriptor_schema).
+There is an example `.cctemplate` file in this repository that you can review, and you can learn more about the Sample Descriptor schema [here](https://cloud.google.com/code/docs/vscode/set-up-template-repo#template_descriptor_schema).
 
 ### hello-world
 
-A sample golang template. You can see an entry for this template in the `.cctemplate` file.
+A simple sample written in Go. You can see an entry for this sample in the `.cctemplate` file.
 
-### kubernetes-custom-template/nodejs
+### kubernetes-custom-sample/nodejs
 
-A sample Node.js template with a frontend and backend service. This template uses MongoDB as a database and runs on Kubernetes. You can see an entry for this template in the `.cctemplate` file.
+A Node.js sample with a frontend and backend service. This sample uses MongoDB as a database and runs on Kubernetes. You can see an entry for this sample in the `.cctemplate` file.
 
 ---
 
 ## Usage
 
-To see an example of how the Custom Templates feature of Cloud Code works, you can configure your IDE to recognize this repository and create applications based on the templates within. Follow the steps below to see Custom Templates in action!
+To see an example of how the Custom Sample feature of Cloud Code works, you can configure your IDE to recognize this repository and create applications based on the sample within. Follow the steps below to see this feature in action!
 
 1. Install Cloud Code for [IntelliJ](https://cloud.google.com/code/docs/intellij/install?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) or [VS Code](https://cloud.google.com/code/docs/vscode/install?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-)
 
-2. Import the Custom Template repo on [IntelliJ](https://cloud.google.com/code/docs/intellij/create-app-from-custom-template?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) or [VS Code](https://cloud.google.com/code/docs/vscode/create-app-from-custom-template?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-), using this repo's Git URL: `https://github.com/GoogleCloudPlatform/cloud-code-custom-templates-example.git`
+2. Import the Custom Sample repo on [IntelliJ](https://cloud.google.com/code/docs/intellij/create-app-from-custom-template?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) or [VS Code](https://cloud.google.com/code/docs/vscode/create-app-from-custom-template?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-), using this repo's Git URL: `https://github.com/GoogleCloudPlatform/cloud-code-custom-samples-example.git`
 
-You can create your own Custom Template repo using this repository as a base.
+You can create your own Custom Sample repo using this repository as a base.
 
 1. Clone this repository
 
-2. Create a new directory containing your own template (or make changes to any of the sample templates)
-
-3. Make any necessary updates to the templates in the `.cctemplate` file 
+2. Create a new directory containing your own sample (or make changes to any of the sample samples)
+2. Create a new directory containing your own sample (or make changes to any of the samples)
+3. Make any necessary updates to the samples in the `.cctemplate` file 
 
 4. Import your local, updated repository into Cloud Code  
 
