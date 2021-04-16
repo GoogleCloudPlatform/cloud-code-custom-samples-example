@@ -49,7 +49,7 @@ You can create your own Custom Sample repo using this repository as a base.
 1. Clone this repository
 
 2. Create a new directory containing your own sample (or make changes to any of the sample samples)
-
+2. Create a new directory containing your own sample (or make changes to any of the samples)
 3. Make any necessary updates to the samples in the `.cctemplate` file 
 
 4. Import your local, updated repository into Cloud Code  
