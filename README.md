@@ -50,7 +50,7 @@ The frontend service for Bank of Anthos is included in the `.cctemplate` file as
 
 ## Usage
 
-To see an example of how the Custom Sample feature of Cloud Code works, you can configure your IDE to recognize this repository and create applications based on the sample within. Follow the steps below to see Custom Sample in action!
+To see an example of how the Custom Sample feature of Cloud Code works, you can configure your IDE to recognize this repository and create applications based on the sample within. Follow the steps below to see this feature in action!
 
 1. Install Cloud Code for [IntelliJ](https://cloud.google.com/code/docs/intellij/install?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) or [VS Code](https://cloud.google.com/code/docs/vscode/install?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-)
 
@@ -60,7 +60,7 @@ You can create your own Custom Sample repo using this repository as a base.
 
 1. Clone this repository
 
-2. Create a new directory containing your own sample (or make changes to any of the sample samples)
+2. Create a new directory containing your own sample (or make changes to any of the samples)
 
 3. Make any necessary updates to the samples in the `.cctemplate` file 
 
