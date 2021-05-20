@@ -27,7 +27,7 @@
             "path": "kubernetes-custom-sample/nodejs",
             "name": "Kubernetes Custom Sample - Node.js",
             "description": "A two-service sample with a MongoDB database run on Kubernetes"
-        },
+        }
 
     ]
 }
