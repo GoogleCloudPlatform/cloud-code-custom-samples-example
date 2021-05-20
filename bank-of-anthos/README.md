@@ -15,7 +15,7 @@ If you’re using this app, please ★Star the repository to show your interest!
 
 | Sign in                                                                                                        | Home                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| [![Login](/docs/login.png)](/docs/login.png) | [![User Transactions](/docs/transactions.png)](/docs/transactions.png) |
+| [![Login](./docs/login.png)](./docs/login.png) | [![User Transactions](./docs/transactions.png)](./docs/transactions.png) |
 
 
 ## Service Architecture
