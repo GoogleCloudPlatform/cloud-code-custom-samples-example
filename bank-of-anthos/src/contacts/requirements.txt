@@ -29,7 +29,7 @@ chardet==3.0.4
     # via
     #   -r requirements.in
     #   requests
-click==7.1.1
+click==7.1.2
     # via
     #   -r requirements.in
     #   flask

@@ -10,7 +10,7 @@ certifi==2018.11.29
     #   requests
 chardet==3.0.4
     # via requests
-click==7.0
+click==7.1.2
     # via flask
 configargparse==1.2
     # via locustio
