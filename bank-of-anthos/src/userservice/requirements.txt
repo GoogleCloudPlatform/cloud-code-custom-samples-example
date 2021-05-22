@@ -37,7 +37,7 @@ coverage==5.3
     # via pytest-cov
 cryptography==3.3.2
     # via -r requirements.in
-flask==1.1.2
+flask==1.1.4
     # via
     #   -r requirements.in
     #   opentelemetry-instrumentation-flask
