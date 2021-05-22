@@ -164,7 +164,7 @@ pyparsing==2.4.7
     #   packaging
 pytest-cov==2.10.0
     # via -r requirements.in
-pytest==5.4.1
+pytest==5.4.3
     # via
     #   -r requirements.in
     #   pytest-cov
