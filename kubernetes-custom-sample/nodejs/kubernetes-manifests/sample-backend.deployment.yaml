@@ -32,5 +32,5 @@ spec:
         env:
         - name: PORT
           value: "8080"
-        - name: SAMPLE_DB_ADDRESS
+        - name: SAMPLE_DB_ADDR
           value: "nodejs-sample-mongodb:27017"
