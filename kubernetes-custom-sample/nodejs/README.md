@@ -8,11 +8,19 @@ For instructions on setting up your own Custom Sample repository, read the [Cust
 ---
 
 ## Table of contents
-- [Sample contents](#sample-contents)
-- [Examples](#examples)
-- [Deploying with VS Code](#deploying-with-vs-code)
-- [Deploying with IntelliJ](#deploying-with-intellij)
-- [Sign up for user research](#sign-up-for-user-research)
+- [Kubernetes Custom Sample](#kubernetes-custom-sample)
+  - [Table of contents](#table-of-contents)
+  - [Sample contents](#sample-contents)
+    - [frontend](#frontend)
+    - [backend](#backend)
+  - [Examples](#examples)
+  - [Deploying with VS Code](#deploying-with-vs-code)
+    - [Run the app locally with minikube](#run-the-app-locally-with-minikube)
+  - [Deploying with IntelliJ](#deploying-with-intellij)
+    - [Run the app locally with minikube](#run-the-app-locally-with-minikube-1)
+      - [Start a minikube cluster](#start-a-minikube-cluster)
+      - [Run the app on minikube](#run-the-app-on-minikube)
+  - [Sign up for user research](#sign-up-for-user-research)
 
 ---
 
@@ -98,7 +106,7 @@ For details on how to deploy this sample with Cloud Code, read the Cloud Code fo
 
 2. Click 'OK' to save your configuration. 
 
-3. Select 'Develop on Kubernetes' from the configuration drop down and click the run icon. Cloud Code runs your app in a local [minikube](ttps://minikube.sigs.k8s.io/docs/start/) cluster.  
+3. Select 'Develop on Kubernetes' from the configuration drop down and click the run icon. Cloud Code runs your app in a local [minikube](https://minikube.sigs.k8s.io/docs/start/) cluster.  
 ![Deploy config dropdown](./img/deploy-config.png)
 
 4. View the build process in the output window. Once the build has finished, you will receive a notification from the Event Log. Click 'View' to access the local URLs for your deployed services. The URLs remain accessible through the Event Log dialog.  
