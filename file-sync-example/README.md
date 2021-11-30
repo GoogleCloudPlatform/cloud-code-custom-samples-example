@@ -1,4 +1,4 @@
-NOTE: This is a copy of the [hot-reload](https://github.com/skaffold/examples/hot-reload) sample from the skaffold repository. It has been modified here to run on [Cloud Code](https://cloud.google.com/code). You can view this sample in its original context by visiting the [skaffold examples repo](https://github.com/skaffold/examples).
+NOTE: This is a copy of the [hot-reload](https://github.com/GoogleContainerTools/skaffold/tree/main/examples/hot-reload) sample from the skaffold repository. It has been modified here to run on [Cloud Code](https://cloud.google.com/code). You can view this sample in its original context by visiting the [skaffold examples repo](https://github.com/skaffold/examples).
 
 ---
 ## Example: hot-reload with Node and Python
