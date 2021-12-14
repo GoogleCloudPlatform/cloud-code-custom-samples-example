@@ -54,19 +54,42 @@ cd bank-of-anthos
 
 3. **Create a GKE cluster.**
 
+- GKE Autopilot mode (see [GKE Autopilot overview](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview) to learn more):
+
+```
+gcloud services enable container.googleapis.com monitoring.googleapis.com \
+  --project ${PROJECT_ID}
+
+REGION=us-central1
+gcloud container clusters create-auto bank-of-anthos \
+  --project=${PROJECT_ID} --region=${REGION}
+```
+
+- GKE Standard mode:
+
 ```
 ZONE=us-central1-b
 gcloud beta container clusters create bank-of-anthos \
---project=${PROJECT_ID} --zone=${ZONE} \
---machine-type=e2-standard-2 --num-nodes=4 \
---enable-stackdriver-kubernetes --subnetwork=default \
---tags=bank-of-anthos --labels csm=
+  --project=${PROJECT_ID} --zone=${ZONE} \
+  --machine-type=e2-standard-2 --num-nodes=4 \
+  --monitoring=SYSTEM --logging=SYSTEM,WORKLOAD --subnetwork=default \
+  --tags=bank-of-anthos --labels csm=
 ```
 
 4. **Get credentials for the created cluster**
 
+- GKE Autopilot mode:
+
 ```
-gcloud container clusters get-credentials bank-of-anthos --project=${PROJECT_ID} --zone=${ZONE}
+gcloud container clusters get-credentials bank-of-anthos \
+  --project=${PROJECT_ID} --region=${REGION}
+```
+
+- GKE Standard mode:
+
+```
+gcloud container clusters get-credentials bank-of-anthos \
+  --project=${PROJECT_ID} --zone=${ZONE}
 ```
 
 5. **Deploy the demo JWT public key** to the cluster as a Secret. This key is used for user account creation and authentication.
@@ -119,7 +142,7 @@ EXTERNAL-IP
 
 - **Workload Identity**: [See these instructions.](./docs/workload-identity.md)
 - **Cloud SQL**: [See these instructions](./extras/cloudsql) to replace the in-cluster databases with hosted Google Cloud SQL.
-- **Multicluster with Cloud SQL**: [See these instructions](./extras/cloudsql-multicluster) to replicate the app across two regions using GKE, Multi-cluster Ingress, and Google Cloud SQL.
+- **Multi Cluster with Cloud SQL**: [See these instructions](./extras/cloudsql-multicluster) to replicate the app across two regions using GKE, Multi Cluster Ingress, and Google Cloud SQL.
 - **Istio**: Apply `istio-manifests/` to your cluster to access the frontend through the IngressGateway.
 - **Anthos Service Mesh**: ASM requires Workload Identity to be enabled in your GKE cluster. [See the workload identity instructions](./docs/workload-identity.md) to configure and deploy the app. Then, apply `istio-manifests/` to your cluster to configure frontend ingress.
 - **Java Monolith (VM)**: We provide a version of this app where the three Java microservices are coupled together into one monolithic service, which you can deploy inside a VM (eg. Google Compute Engine). See the [ledgermonolith](./src/ledgermonolith) directory.
@@ -132,7 +155,8 @@ See the [Troubleshooting guide](./docs/troubleshooting.md) for resolving common 
 
 See the [Development guide](./docs/development.md) to learn how to run and develop this app locally.
 
-## Talks/Demos using Bank of Anthos
-
+## Demos Featuring Bank of Anthos
+- [Explore Anthos (Google Cloud docs)](https://cloud.google.com/anthos/docs/tutorials/explore-anthos)
+- [Tutorial - Migrate for Anthos - Migrating a monolith VM to GKE](https://cloud.google.com/migrate/anthos/docs/migrating-monolith-vm-overview-setup)
+- [Google Cloud Architecture Center - Running distributed services on GKE private clusters using Anthos Service Mesh](https://cloud.google.com/architecture/distributed-services-on-gke-private-using-anthos-service-mesh)
 - [Google Cloud Next '20 - Hands-on Keynote](https://www.youtube.com/watch?v=7QR1z35h_yc)  (Anthos, Cloud Operations, Spring Cloud GCP, BigQuery, AutoML)
-
