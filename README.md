@@ -58,14 +58,6 @@ An example application demonstrating skaffold's [file sync](https://skaffold.dev
 
 A Node.js sample with a frontend and backend service. This sample uses MongoDB as a database and runs on Kubernetes. You can see an entry for this sample in the `.cctemplate` file.
 
-### bank-of-anthos
-
-A copy of the [Bank of Anthos](https://github.com/GoogleCloudPlatform/bank-of-anthos) application, an HTTP-based web app that simulates a bank's payment processing network. This app demonstrates using Google Cloud Platform products to modernize enterprise applications. It's configured to run with any Kubernetes cluster in Cloud Code.
-
-### bank-of-anthos/src/frontend
-
-The frontend service for Bank of Anthos is included in the `.cctemplate` file as a separate sample. This is an example of how to use a subfolder in a repo as a separate Custom Sample.
-
 --- 
 
 ## Sign up for user research

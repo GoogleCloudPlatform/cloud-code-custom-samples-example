@@ -4,16 +4,6 @@
     },
     "templates": [
         {
-            "path": "bank-of-anthos",
-            "name": "Bank of Anthos",
-            "description": "An HTTP-based web app that simulates a bank's payment processing network."
-        },
-        {
-            "path": "bank-of-anthos/src/frontend",
-            "name": "Bank of Anthos Frontend",
-            "description": "A sample containing the frontend service of Bank of Anthos."
-        },
-        {
             "path": "file-sync-example",
             "name": "File Sync Example",
             "description": "A Node.js and Python app demonstrating Cloud Code's file sync capability."
