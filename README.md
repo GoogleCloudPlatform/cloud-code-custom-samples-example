@@ -2,6 +2,8 @@
 
 This repository is an example [Custom Sample Repository](https://cloud.google.com/code/docs/vscode/set-up-template-repo?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) that can be used with the Cloud Code plugins for [VSCode](https://cloud.google.com/code/docs/vscode/quickstart?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) and [IntelliJ](https://cloud.google.com/code/docs/intellij/quickstart?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
 
+*Apache Log4j Vulnerability (Log4j 2):* this repository previously included a sample using a vulnerable version of Log4j 2. The sample was removed on December 15, 2021. We strongly advise customers to update their samples repositories. Visit the [security advisory](https://github.com/GoogleCloudPlatform/cloud-code-custom-samples-example/security/advisories/GHSA-h9xv-vc3v-gvw9) for details and remediation.
+
 ---
 ## Usage
 
