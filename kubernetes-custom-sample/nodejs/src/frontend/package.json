@@ -10,7 +10,7 @@
   "license": "0BSD",
   "dependencies": {
     "axios": "0.24.0",
-    "body-parser": "1.19.0",
+    "body-parser": "1.20.3",
     "express": "4.17.1",
     "moment": "2.29.3",
     "pug": "3.0.2"
